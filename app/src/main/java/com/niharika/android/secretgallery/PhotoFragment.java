@@ -42,8 +42,6 @@ public class PhotoFragment extends Fragment {
     private static final String ARG_IMG_TYPE = "imgType";
     private boolean selfie = false;
     private String imgType = "selfie";
-    private ScaleGestureDetector mScaleGestureDetector;
-    private float mScaleFactor = 1.0f;
     private View view;
 
     public static PhotoFragment newInstance(Photo photo) {
@@ -106,13 +104,11 @@ public class PhotoFragment extends Fragment {
                         try {
                             newFile.createNewFile();
                         } catch (IOException e) {
-                            // TODO Auto-generated catch block
                             e.printStackTrace();
                         }
                     oldFile.renameTo(newFile);
                         oldFile.delete();
-                        Log.d("tag","old file"+oldFile.getAbsolutePath()+"new file"+newFile.getAbsolutePath());
-                    callBroadCast(oldFile.getAbsolutePath());
+                        callBroadCast(oldFile.getAbsolutePath());
                 }
                 showSnackBarMsg(getString(R.string.savePhoto));
             }

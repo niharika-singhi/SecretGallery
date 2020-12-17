@@ -16,16 +16,11 @@ import java.io.IOException;
  * An {@link IntentService} subclass for handling asynchronous task requests in
  * a service on a separate handler thread.
  * <p>
- * TODO: Customize class - update intent actions, extra parameters and static
- * helper methods.
  */
 public class FlipPhotoIntentService extends IntentService {
-    // TODO: Rename actions, choose action names that describe tasks that this
-    // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
+
     public static final String ARG_PHOTO="photo_data";
     File file;
-
-
     public FlipPhotoIntentService() {
         super("FlipPhotoIntentService");
     }
@@ -36,7 +31,6 @@ public class FlipPhotoIntentService extends IntentService {
      *
      * @see IntentService
      */
-    // TODO: Customize helper method
 
     @Override
     protected void onHandleIntent(Intent intent) {
