@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:layout_marginTop="32dp"
+        android:text="@string/change_code"
+        android:textColor="@color/SG_dark_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:textStyle="bold"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/EmailId"
+        android:textColor="@color/SG_textColor_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/oldCode_input"
+        android:layout_margin="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/SG_textColor_primary"
+        android:hint="@string/oldCode"
+        app:layout_constraintTop_toBottomOf="@+id/email_label" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/oldCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:background="@color/SG_textColor_white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/newcodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:hint="@string/newCode"
+        android:maxLength="4"
+        android:textColorHint="@color/SG_textColor_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldCode_input">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SG_textColor_white"
+            android:maxLength="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/confirmcodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:hint="@string/confirmCode"
+        android:maxLength="4"
+        android:textColorHint="@color/SG_textColor_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newcodeInput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SG_textColor_white"
+            android:maxLength="4" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmcodeInput" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

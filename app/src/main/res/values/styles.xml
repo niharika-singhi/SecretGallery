@@ -1,0 +1,8 @@
+<resources>
+    <style name="AlertDialog.SecretGallery" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+    <!-- Customize your theme here. -->
+        <item name="colorSurface">@color/SG_lightest_yellow</item>
+        <item name="colorOnSurface">@color/SG_textColor_primary</item>
+    </style>
+
+</resources>

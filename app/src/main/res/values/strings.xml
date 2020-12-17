@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SecretGallery</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preview_area">Preview</string>
+    <string name="capture">Capture</string>
+    <string name="MyPhotos">M</string>
+    <string name="MyPhotosLabel">My Photos</string>
+    <string name="AllPhotosLabel">All Photos</string>
+    <string name="folder_name">SecretGallery</string>
+    <string name="EmailId">EmailId</string>
+    <string name="code">Code</string>
+    <string name="code_new_label">Enter a secret code</string>
+    <string name="button_next">Next</string>
+    <string name="button_forget">Forget Code</string>
+    <string name="change_code">Set a new Code</string>
+    <string name="oldCode">Enter Old Code</string>
+    <string name="newCode">Enter New code</string>
+    <string name="button_save">Save</string>
+    <string name="confirmCode">Confirm the code</string>
+    <string name="subject">Secret Gallery Forget Code</string>
+    <string name="email_sent_msg">Please check your inbox for Code.</string>
+    <string name="mailBody_1">Hi, \n\n Please find below code to access your Secret Gallery of Photos- \n \n Code:\t</string>
+    <string name="mailBody_2">\n\n Thank you</string>
+    <string name="action_settings">Settings</string>
+    <string name="wrongCodeMsg">Please enter correct code</string>
+    <string name="codesNotMatch">New  and Confirm codes not match</string>
+    <string name="delete">Delete</string>
+    <string name="delMsg">Delete Photo?</string>
+    <string name="email_empty">Please enter email id</string>
+    <string name="code_empty">Please enter a code of 4 characters</string>
+    <string name="invalid_email">Please enter a valid email Id</string>
+    <string name="savePhoto">Photo is saved</string>>
+</resources>

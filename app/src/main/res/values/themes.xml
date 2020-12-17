@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SecretGallery" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/SG_dark_purple</item>
+        <item name="colorPrimaryVariant">@color/SG_purple</item>
+        <item name="colorSecondary">@color/SG_yellow</item>
+        <item name="colorSecondaryVariant">@color/SG_light_yellow</item>
+        <item name="colorOnPrimary">@color/SG_textColor_primary</item>
+        <item name="colorOnSecondary">@color/SG_textColor_secondary</item>
+        <item name="colorSurface">@color/SG_textColor_secondary</item>
+        <item name="colorError">@color/SG_red_error</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialog.SecretGallery</item>
+    </style>
+</resources>

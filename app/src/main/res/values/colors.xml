@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="SG_purple">#ce93d8</color>    <!-- primaryColor -->
+    <color name="SG_light_purple">#ffc4ff</color>  <!--primaryLightColor -->
+    <color name="SG_dark_purple">#9c64a6</color>  <!--primaryDarkColor -->
+    <color name="SG_yellow">#fff176</color>  <!--secondaryColor -->
+    <color name="SG_light_yellow">#ffffa8</color>  <!--secondaryLightColor -->
+    <color name="SG_lightest_yellow">#fafac3</color>  <!--secondaryLightColor -->
+    <color name="SG_dark_yellow">#cabf45</color>  <!--secondaryDarkColor -->
+    <color name="SG_textColor_primary">#000000</color>  <!--primaryTextColor -->
+    <color name="SG_textColor_secondary">#000000</color>  <!--secondaryTextColor -->
+    <color name="SG_textColor_white"> #FFFFFF</color>  <!--text color for dark theme -->
+    <color name="SG_red_error">#B00020</color>  <!--colorError -->
+
+</resources>

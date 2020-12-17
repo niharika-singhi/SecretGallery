@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/allPhotoFragment"
+        android:name="com.niharika.android.secretgallery.GalleryFragment"
+        android:label="fragment_all_photo"
+        tools:layout="@layout/fragment_all_photo" >
+        <action
+            android:id="@+id/action_allPhotoFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.niharika.android.secretgallery.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+    <fragment
+        android:id="@+id/photoPagerFragment"
+        android:name="com.niharika.android.secretgallery.PhotoPagerFragment"
+        android:label="fragment_photo_pager"
+        tools:layout="@layout/fragment_photo_pager" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.niharika.android.secretgallery.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.niharika.android.secretgallery.PagerFragment"
+        android:label="PagerFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.niharika.android.secretgallery.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeCodeFragment"
+        android:name="com.niharika.android.secretgallery.ChangeCodeFragment"
+        android:label="ChangeCodeFragment" />
+</navigation>
