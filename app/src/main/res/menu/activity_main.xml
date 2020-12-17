@@ -2,8 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_change-code"
+        android:id="@+id/action_change_code"
         android:icon="@drawable/ic_action_changecode"
         android:title="@string/action_settings"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/menu_share" />
 </menu>

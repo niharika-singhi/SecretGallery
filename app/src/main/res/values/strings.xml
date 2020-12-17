@@ -31,5 +31,7 @@
     <string name="email_empty">Please enter email id</string>
     <string name="code_empty">Please enter a code of 4 characters</string>
     <string name="invalid_email">Please enter a valid email Id</string>
-    <string name="savePhoto">Photo is saved</string>>
+    <string name="savePhoto">Photo is saved</string>
+    <string name="menu_share">Share</string>
+    <string name="playstoreLink">https://play.google.com/store/apps/details?id=</string>>
 </resources>

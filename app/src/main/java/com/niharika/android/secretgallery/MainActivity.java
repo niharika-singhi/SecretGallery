@@ -1,11 +1,12 @@
 package com.niharika.android.secretgallery;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.Navigation;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.Navigation;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_change_code:
                 Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment).navigate(R.id.changeCodeFragment);
                 return true;
-
-            default:
+            case R.id.action_share:
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name));
+                shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.playstoreLink)
+                        + BuildConfig.APPLICATION_ID);
+                startActivity(Intent.createChooser(shareIntent, "Choose one"));
+                return true;
+                default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.
                 return super.onOptionsItemSelected(item);
