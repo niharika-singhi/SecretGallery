@@ -19,6 +19,7 @@ import androidx.navigation.Navigation;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 
 /**
@@ -27,7 +28,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class MainFragment extends Fragment {
     private String mEmailId, mCode;
     View view;
-    private EditText mEmailView, mCodeView;
+    private TextInputEditText mEmailView, mCodeView;
     private MaterialButton mNextButton, mForgetButton;
     private int layout;
 
@@ -90,18 +91,18 @@ public class MainFragment extends Fragment {
     private boolean checkError(String email, String code) {
         if (email != null)
             if (TextUtils.isEmpty(email)) {
-                ((TextInputEditText) view.findViewById(R.id.email_input)).setError("Enter Email id");
+                ((TextInputLayout) view.findViewById(R.id.email_input)).setError("Enter Email id");
                 showSnackBarMsg(getString(R.string.email_empty));
                 return false;
             }
         if (TextUtils.isEmpty(code)) {
-            ((TextInputEditText) view.findViewById(R.id.code)).setError("Enter Code");
+            ((TextInputLayout) view.findViewById(R.id.code)).setError("Enter Code");
             showSnackBarMsg(getString(R.string.code_empty));
             return false;
         }
         if (email != null)
             if (Patterns.EMAIL_ADDRESS.matcher(code).matches()) {
-                ((TextInputEditText) view.findViewById(R.id.email_input)).setError("Email address is invalid");
+                ((TextInputLayout) view.findViewById(R.id.email_input)).setError("Email address is invalid");
                 showSnackBarMsg(getString(R.string.invalid_email));
                 return false;
             }

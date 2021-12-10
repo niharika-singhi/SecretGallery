@@ -120,6 +120,7 @@ public class GalleryFragment extends Fragment {
         ArrayList<Photo> listOfAllImages = new ArrayList<Photo>();
         File imagesFolder = new File(Environment.getExternalStorageDirectory(), getString(R.string.folder_name));
         File[] fileArray = imagesFolder.listFiles();
+        if(fileArray!=null)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Arrays.sort(fileArray, Comparator.comparingLong(File::lastModified).reversed());
             for (File f : fileArray) {
