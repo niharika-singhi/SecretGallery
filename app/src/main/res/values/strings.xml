@@ -8,7 +8,7 @@
     <string name="MyPhotos">M</string>
     <string name="MyPhotosLabel">My Photos</string>
     <string name="AllPhotosLabel">All Photos</string>
-    <string name="folder_name">SecretGallery</string>
+    <string name="folder_name">Download/SecretGallery</string>
     <string name="EmailId">EmailId</string>
     <string name="code">Code</string>
     <string name="code_new_label">Enter a secret code</string>

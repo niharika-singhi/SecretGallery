@@ -90,6 +90,7 @@ public class PhotoFragment extends Fragment {
         mSaveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                showSnackBarMsg(getString(R.string.savePhoto));
                 File imagesFolder = new File(Environment.getExternalStorageDirectory(), getString(R.string.folder_name));
                 File oldFile = new File(mPhoto.getFileName());
                 //if the photo is already in same dir
@@ -110,7 +111,8 @@ public class PhotoFragment extends Fragment {
                         oldFile.delete();
                         callBroadCast(oldFile.getAbsolutePath());
                 }
-                showSnackBarMsg(getString(R.string.savePhoto));
+
+
             }
         });
         mDelButton.setOnClickListener(new View.OnClickListener() {
