@@ -96,7 +96,7 @@ public class MainFragment extends Fragment {
                 return false;
             }
         if (TextUtils.isEmpty(code)) {
-            ((TextInputLayout) view.findViewById(R.id.code)).setError("Enter Code");
+            ((TextInputEditText) view.findViewById(R.id.code)).setError("Enter Code");
             showSnackBarMsg(getString(R.string.code_empty));
             return false;
         }

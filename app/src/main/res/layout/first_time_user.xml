@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:contentDescription="icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,6 +37,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/SG_textColor_primary"
+        app:hintTextColor="@color/SG_textColor_secondary"
         android:hint="@string/EmailId"
         app:layout_constraintTop_toBottomOf="@+id/app_title" >
 
@@ -55,6 +58,7 @@
         android:layout_margin="28dp"
         android:hint="@string/code_new_label"
         android:textColorHint="@color/SG_textColor_primary"
+        app:hintTextColor="@color/SG_textColor_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_input">
@@ -73,8 +77,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:contentDescription="@string/button_next"
+        android:fontFamily="sans-serif-black"
+        android:padding="4dp"
         android:text="@string/button_next"
-        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code_view" />
